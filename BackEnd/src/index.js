@@ -14,13 +14,12 @@ dotenv.config();
 
 
 const allowedOrigins = [
-  'http://localhost:5173' 
+'https://plantstore-axmx.onrender.com'
 ];
 
 app.use(cors({
   origin: function (origin, callback) {
-    // Check if the request origin is in our allowed list
-    // The 'origin' parameter passed here will be 'http://localhost:5173'
+    
     if (allowedOrigins.includes(origin) || !origin) {
       callback(null, true);
     } else {
