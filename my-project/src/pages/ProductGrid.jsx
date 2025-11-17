@@ -75,10 +75,10 @@ function ProductGrid() {
         return <Text color="red.500" textAlign="center">{error}</Text>;
     }
 
-    // New return statement with the simplified layout
+
     return (
         <VStack spacing={6} p={4} maxW="1200px" mx="auto">
-            {/* Search and Filter UI at the top, centered */}
+
             <HStack w="full" maxW="4xl" mt={4} spacing={4}>
                 <Input
                     ref={searchRef}
@@ -100,7 +100,7 @@ function ProductGrid() {
                 </Select>
             </HStack>
             
-            {/* Products below the search bar */}
+
             {plants.length === 0 ? (
                 <Text textAlign="center" mt={8}>No plants available matching your criteria.</Text>
             ) : (
@@ -111,7 +111,7 @@ function ProductGrid() {
                 </SimpleGrid>
             )}
 
-            {/* Pagination controls */}
+
             {totalPages > 1 && (
                 <HStack spacing={4} pb={8} justify="center" mt={8}>
                     <Button 
