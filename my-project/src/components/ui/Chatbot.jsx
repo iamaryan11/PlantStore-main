@@ -19,7 +19,7 @@ import {
 import { ChatIcon } from "@chakra-ui/icons";
 import axios from "axios";
 
-const CHAT_API_URL = "https://urvan-2.onrender.com/Ai/chatwithai";
+const CHAT_API_URL = "https://plantstore-backend-oj7s.onrender.com/Ai/chatwithai";
 
 function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
