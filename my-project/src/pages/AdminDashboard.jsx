@@ -19,7 +19,7 @@ import {
 } from "@chakra-ui/react";
 import axios from "axios";
 
-const ADD_PLANT_URL = "http://localhost:3000/adminrightss/addplants";
+const ADD_PLANT_URL = "https://plantstore-backend-oj7s.onrender.com/adminrightss/addplants";
 
 function AdminDashboard() {
   const [name, setName] = useState("");
@@ -123,7 +123,7 @@ function AdminDashboard() {
             Welcome! Add a new plant to the inventory below.
           </Text>
 
-          {/* Plant Name Input */}
+
           <FormControl id="name" isRequired>
             <FormLabel>Plant Name</FormLabel>
             <Input
@@ -134,7 +134,7 @@ function AdminDashboard() {
             />
           </FormControl>
 
-          {/* Price Input */}
+
           <FormControl id="price" isRequired>
             <FormLabel>Price (Rs)</FormLabel>
             <Input
@@ -145,7 +145,7 @@ function AdminDashboard() {
             />
           </FormControl>
 
-          {/* Categories Input */}
+
           <FormControl id="categories" isRequired>
             <FormLabel>Categories</FormLabel>
             <HStack flexWrap="wrap" spacing={2} mb={2}>
@@ -175,7 +175,7 @@ function AdminDashboard() {
             </HStack>
           </FormControl>
 
-          {/* In Stock Checkbox */}
+
           <FormControl id="inStock">
             <Checkbox
               isChecked={inStock}
@@ -185,7 +185,7 @@ function AdminDashboard() {
             </Checkbox>
           </FormControl>
 
-          {/* Image URL Input */}
+
           <FormControl id="imageUrl">
             <FormLabel>Image URL</FormLabel>
             <Input
@@ -196,7 +196,7 @@ function AdminDashboard() {
             />
           </FormControl>
 
-          {/* Submit Button */}
+
           <Button
             type="submit"
             colorScheme="teal"
