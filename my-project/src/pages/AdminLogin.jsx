@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // 👈 Import useNavigate
+import { useNavigate } from 'react-router-dom'; 
 import {
   Box,
   Button,
@@ -15,7 +15,7 @@ import {
 } from '@chakra-ui/react';
 import axios from 'axios';
 
-const ADMIN_LOGIN_URL = 'http://localhost:3000/user/login';
+const ADMIN_LOGIN_URL = 'https://plantstore-backend-oj7s.onrender.com/user/login';
 
 function AdminLogin() {
 
