@@ -55,7 +55,7 @@ function Signup() {
         </Box>
       </Flex>
 
-      {/* Form */}
+
       <Flex flex={1} align="center" justify="center">
         <Box maxW="md" w="full" p={8} borderWidth="1px" borderRadius="lg" bg="white" shadow="lg">
           <Heading textAlign="center" size="lg" mb={6} color="green.600">Sign Up</Heading>
